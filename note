@@ -1,0 +1,29 @@
+star pattern
+swap
+highest 
+lowest
+promise
+promisechaining
+    fulfillment, pending, reject
+ -- all with example
+callback, callback hell, call apply bind
+ -- all with example
+
+fetch, counter, country-state-district
+rapple, streams, scaling: {horizontal, vertical}
+closure
+high order components
+flux -> contextapi -> redux(thunk, saga) -> redux toolkit
+
+
+
+
+
+
+
+
+
+to do:
+-- localStorage data -> redux
+-- otp -> email
+-- token
