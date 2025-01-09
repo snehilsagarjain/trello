@@ -1,0 +1,117 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: '100px solid green';
+    z-index: 9999;
+}
+
+.modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    text-align: 'center';
+    /* border: '10px solid blue'; */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-header button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.modal-header button:hover {
+    background-color: darkred;
+}
+
+.modal-content {
+    /* border: '1px solid black'; */
+    margin-top: 20px;
+}
+
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    margin-bottom: 10px;
+}
+
+.modal-content h3 {
+    font-size: 1.2em;
+    color: green;
+}
+
+.modal-content iframe {
+    width: 100%;  /* Make iframe responsive */
+    height: 400px;  /* Adjust the height of the iframe */
+    border: none;
+}
+
+/* Modal.css */
+/* .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;  /* Adjust width *//*
+    max-width: 800px;  /* Maximum width *//*
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .modal-header button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .modal-header button:hover {
+    background-color: darkred;
+  }
+  
+  .modal-content iframe {
+    width: 100%;
+    height: 400px; /* Adjust the iframe height *//*
+    border: none;
+  } */
+  

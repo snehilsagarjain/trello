@@ -1,0 +1,149 @@
+    /* App.css */
+
+    /* Full screen container */
+    .login-page {
+      height: 100vh;
+      width: 100vw;
+      background-color: black;
+      /* Set background to black */
+      position: relative;
+      /* For bubble positioning */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      /* Hide overflow to keep the bubbles in the background */
+
+
+    }
+
+    /* Bubble animation and styling */
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      pointer-events: none;
+      animation: float 10s ease-in-out infinite;
+    }
+
+    /* Bubble animation (bubbles float upwards) */
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+        opacity: 0.7;
+      }
+
+      100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+      }
+    }
+
+    /* Create random bubbles */
+    .bubble:nth-child(1) {
+      width: 40px;
+      height: 40px;
+      left: 10%;
+      animation-duration: 8s;
+      animation-delay: 2s;
+    }
+
+    .bubble:nth-child(2) {
+      width: 50px;
+      height: 50px;
+      left: 20%;
+      animation-duration: 6s;
+      animation-delay: 4s;
+    }
+
+    .bubble:nth-child(3) {
+      width: 60px;
+      height: 60px;
+      left: 30%;
+      animation-duration: 9s;
+      animation-delay: 3s;
+    }
+
+    .bubble:nth-child(4) {
+      width: 30px;
+      height: 30px;
+      left: 40%;
+      animation-duration: 7s;
+      animation-delay: 1s;
+    }
+
+    .bubble:nth-child(5) {
+      width: 50px;
+      height: 50px;
+      left: 50%;
+      animation-duration: 10s;
+      animation-delay: 5s;
+    }
+
+    .bubble:nth-child(6) {
+      width: 70px;
+      height: 70px;
+      left: 60%;
+      animation-duration: 6s;
+      animation-delay: 2s;
+    }
+
+    .bubble:nth-child(7) {
+      width: 40px;
+      height: 40px;
+      left: 70%;
+      animation-duration: 8s;
+      animation-delay: 4s;
+    }
+
+    .bubble:nth-child(8) {
+      width: 60px;
+      height: 60px;
+      left: 80%;
+      animation-duration: 7s;
+      animation-delay: 3s;
+    }
+
+    .bubble:nth-child(9) {
+      width: 50px;
+      height: 50px;
+      left: 90%;
+      animation-duration: 9s;
+      animation-delay: 1s;
+    }
+
+    /* Center login box */
+    .login-box {
+      z-index: 10;
+      /* Ensure it's on top of the bubbles */
+    }
+
+    /* App.css */
+
+    /* Overriding the logo with a custom image */
+    .login-page .login-logo img {
+      content: url('./pngimg.com - letter_L_PNG29.png');
+      /* Replace with your logo path */
+      width: 150px;
+      /* Adjust the size of the logo */
+      height: auto;
+      /* Maintain aspect ratio */
+    }
+
+    /* Login.css */
+    .logo-container {
+      text-align: center;
+      margin-bottom: 20px;
+      /* Adjust margin as needed */
+    }
+
+    .login-logo {
+      width: 150px;
+      /* Adjust the width as needed */
+      height: auto;
+      /* Maintain aspect ratio */
+    }
+
+    .footer_style:hover {
+      text-decoration: underline;
+    }

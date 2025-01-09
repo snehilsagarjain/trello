@@ -1,0 +1,410 @@
+/* Sidebar.css */
+/* .sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #111;
+  padding-top: 20px;
+  transition: 0.3s;
+  overflow-x: hidden;
+}
+
+.sidebar1 {
+  /* height: 100%; */
+/*
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #111;
+  padding-top: 20px;
+  transition: 0.3s;
+  overflow-x: hidden;
+  color: white;
+}
+
+.sidebar.closed {
+  width: 0;
+}
+
+.sidebar1 .displayon {
+  display: block;
+  /* position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #111;
+  padding-top: 20px;
+  transition: 0.3s;
+  overflow-x: hidden; */
+/*
+}
+
+.sidebar1 .displayoff {
+  display: none;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.sidebar li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar li a:hover {
+  background-color: #575757;
+} */
+/*---------------------------------*/
+/* Sidebar.css */
+.sidebar {
+  width: 0px;
+  /* Initially, the sidebar width is 0 */
+  /* width: 100vw; */
+  background-color: #333;
+  color: white;
+  /* padding: 20px; */
+
+  height: 100vh;
+  transition: width 0.3s ease, padding 0.3s ease;
+  /* Smooth transition for width and padding */
+
+  overflow: hidden;
+  /* Hide any content when the sidebar is closed */
+
+}
+
+.sidebar.open {
+  width: 250px;
+  /* width: 100vw; */
+  /* Sidebar width when open */
+
+  padding: 20px;
+  /* Restore padding when open */
+
+  border: 1px solid blue;
+}
+
+.sidebar h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid orange;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  color: #ccc;
+}
+
+/* For the mobile hamburger menu */
+
+.hamburger-menu {
+  /* display: none; */
+
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  /* border: 1px solid orange; */
+
+}
+
+@media (max-width: 768px) {
+
+  /* Show the hamburger menu on small screens */
+
+  .hamburger-menu {
+    display: block;
+    border: 2px solid green;
+  }
+
+  /* Stack content and sidebar on mobile view */
+
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar .open {
+    /* width: 100px; */
+    width: 100vw;
+    padding: 150px;
+  }
+
+  .sidebar ul {
+    /* padding: 100vw; */
+  }
+
+
+  .main-content {
+    margin-left: 0;
+    /* No margin on mobile */
+
+  }
+}
+
+/*--------------------------------------------------------*/
+/* Sidebar.css */
+/* .sidebar {
+  width: 0;
+  width: 250px;
+  width: 100vw;
+  /* Initially, the sidebar is collapsed */
+/*background-color: #333;
+  color: white;
+  /* padding: 0; */
+/* padding: 20px;
+  /* No padding when the sidebar is closed */
+/* height: 100vh;
+  transition: width 0.3s ease, padding 0.3s ease;
+  /* Smooth transition for width and padding */
+/*overflow: hidden;
+  /* Hide content when the sidebar is collapsed */
+/*} */
+
+/* .sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #111;
+  padding-top: 20px;
+  transition: 0.3s;
+  overflow-x: hidden;
+} */
+/* .sidebar {
+  width: 0px;
+  /* Initially, the sidebar width is 0 */
+/*
+  background-color: #333;
+  color: white;
+  /* padding: 20px; */
+/*
+  height: 100vh;
+  transition: width 0.3s ease, padding 0.3s ease;
+  /* Smooth transition for width and padding */
+/*
+  overflow: hidden;
+  /* Hide any content when the sidebar is closed */
+/*
+}*/
+/* .sidebar.open {
+  width: 250px; */
+/* Sidebar width when open (default for larger screens) */
+/* padding: 20px; */
+/* Restore padding when open */
+/* } */
+
+/*
+.sidebar.open {
+  width: 250px;
+  /* width: 100vw; */
+/* Sidebar width when open */
+/*
+  padding: 20px;
+  /* Restore padding when open */
+/*
+  border: 1px solid blue;
+}
+
+/* For smaller screens (<= 768px), make the sidebar full width */
+/* @media (max-width: 768px) {
+  .sidebar.open {
+    width: 100vw; */
+/* Sidebar takes up the full viewport width on mobile */
+/* } */
+
+/* Adjust the main content when sidebar is opened */
+/* .main-content {
+    margin-left: 0; */
+/* No margin when the sidebar is full-width */
+/* } */
+
+/* When sidebar is closed, no margin is added */
+/* .main-content .no-sidebar {
+    margin-left: 0;
+    width: 0;
+    padding: 0;
+  }
+} */
+
+/* @media (min-width: 769px) { */
+
+/* Hide the hamburger menu on larger screens */
+/* .hamburger-menu {
+    display: none;
+  }
+} */
+
+/*
+@media (max-width: 768px) {
+
+  /* Show the hamburger menu on small screens */
+/*
+  .hamburger-menu {
+    display: block;
+    border: 2px solid green;
+  }
+
+  /* Stack content and sidebar on mobile view */
+/*
+  .app-container {
+    flex-direction: column;
+  }
+
+  .open {
+    width: 100px;
+    padding: 150px;
+  }
+
+  /* .sidebar ul { */
+/* padding: 100vw; */
+/* } */
+/*
+
+  .main-content {
+    margin-left: 0;
+    /* No margin on mobile */
+/*
+  }
+} */
+/* .sidebar h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  color: #ccc;
+} */
+
+/*
+.sidebar h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid orange;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  color: #ccc;
+}
+*/
+
+
+/* For the mobile hamburger menu */
+/* .hamburger-menu {
+  display: none;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+} */
+
+/* For the mobile hamburger menu */
+/*
+.hamburger-menu {
+  /* display: none; */
+/*
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  /* border: 1px solid orange; */
+/*
+}*/
+
+
+/* @media (max-width: 768px) {
+
+  /* Show the hamburger menu on small screens */
+/*
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Stack content and sidebar on mobile view */
+/*
+  .app-container {
+    flex-direction: column;
+  }
+
+  .main-content {
+    margin-left: 0;
+    /* No margin on mobile */
+/*
+  }
+} */
