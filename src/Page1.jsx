@@ -99,7 +99,7 @@
 // // export {color1, Page1};
 
 import React from 'react';
-import Sidebar from './Sidebar';  // Sidebar specific to this page
+import Sidebar from './sidebar';  // Sidebar specific to this page
 import { Outlet } from 'react-router-dom';  // To render the nested route content (like MyCalendar4)
 
 // Page1 will include the Sidebar and use an Outlet to render the content (like MyCalendar4) inside the main content area.
